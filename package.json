@@ -1,0 +1,21 @@
+{
+  "name": "js-test",
+  "version": "1.0.0",
+  "description": "tests for array methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "js",
+    "jest"
+  ],
+  "author": "YStavnychyi",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "babel-jest": "^27.4.5",
+    "jest": "^27.4.5"
+  }
+}
