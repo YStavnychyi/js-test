@@ -3,7 +3,7 @@
 // fn(“Anna czyta potop“) = false;
 // fn(“Devil lived”) = false;
 // fn(“zakaz”) = true.
-export const palindrome = (inputString) =>{
+/*export const palindrome = (inputString) =>{
     let newArray = []
     const arrayStr = inputString.toLowerCase().split(' ')
     for (let i = 0; i < arrayStr.length; i++){
@@ -11,7 +11,14 @@ export const palindrome = (inputString) =>{
         newArray.push(tmp)
     }
     return (arrayStr.join(' ') === newArray.join(' ')) ? true : false
-}
+}*/
+
+export const palindrome = (str) =>
+    str
+        .toLowerCase()
+        .replace('.','')
+        .split(' ')
+        .every(word => word.split('').reverse().join('') === word)
 
 // 2. Znajdź pierwszy niepowtarzalny znak w łańcuchu. Jeśli wszystkie znaki się powtarzają zwróć ‘-’.
 // Przykład:
@@ -28,7 +35,7 @@ export const findUniqueChar = (inputString) =>{
     }
     return '-'
 }
-// //console.log(findUniqueChar('silevis'))
+//console.log(findUniqueChar('silevis'))
 
 // 3. Dana jest tablica unikalnych, nieujemnych, całkowitych liczb. Wykonaj funkcję, która zwraca ilość elementów, które po posortowaniu tablicy powinny się dodać, aby nie było przerw między kolejnymi liczbami.
 //     Przykład:
